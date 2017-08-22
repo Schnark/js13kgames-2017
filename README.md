@@ -3,7 +3,10 @@ This repository will contain my contribution for the [Js13kGames competition 201
 For now just the idea of my game: A child has lost his parents, and you have to find them. You get a description and then have to find them in a crowd.
 
 The code isn't in a shape to share it yet, but I already have screenshot of the prototype:
-![Screenshot](about/prototype1.png)
+![Screenshot](about/prototype2.png)
 
 The previous prototype looked like this:
+![Screenshot](about/prototype1.png)
+
+And the very first one like this:
 ![Screenshot](about/prototype0.png)
