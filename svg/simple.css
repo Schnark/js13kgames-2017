@@ -1,0 +1,106 @@
+svg {
+	stroke-width: 0.5px;
+}
+
+.no-item,
+.item {
+	fill-opacity: 0.5;
+}
+
+.hair0 {
+	fill: #ff8;
+	stroke: #ff8;
+	fill-opacity: 0.5;
+}
+.hair1 {
+	fill: black;
+	stroke: black;
+	fill-opacity: 0.5;
+}
+.hair2 {
+	fill: #884;
+	stroke: #884;
+	fill-opacity: 0.5;
+}
+
+.skin {
+	fill: #da8;
+	stroke: #754;
+}
+
+.shirt {
+	fill: red;
+	stroke: #800;
+	fill-opacity: 0.5;
+}
+
+.trousers,
+.top  {
+	fill: blue;
+	stroke: #008;
+}
+
+.eye {
+	fill: black;
+}
+.mouth {
+	fill: #800;
+}
+.nail {
+	fill: #da8;
+	stroke: #754;
+}
+.metal {
+	fill: silver;
+}
+.glass {
+	fill: #f80;
+	fill-opacity: 0.5;
+	stroke: #f80;
+}
+.plastic {
+	fill: #8af;
+	fill-opacity: 0.5;
+	stroke: blue;
+}
+.fin {
+	fill: #808;
+	stroke: #404;
+}
+.ice-cream-cone {
+	fill: #f80;
+	stroke: #840;
+}
+.ice-cream {
+	fill: #d62;
+	stroke: #631;
+}
+.book {
+	fill: #fff;
+	stroke: #000;
+}
+
+.ball {
+	fill: #f0f;
+}
+
+.parasol {
+	fill: #f00;
+	stroke: #800;
+}
+
+.towel {
+	fill: #808;
+	stroke: #404;
+}
+
+.type0,
+.type1,
+.type2 {
+	opacity: 0.3;
+}
+
+.water {
+	fill: #88f;
+	fill-opacity: 0.7;
+}

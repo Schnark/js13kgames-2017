@@ -1,0 +1,198 @@
+svg {
+	stroke-width: 0.5px;
+}
+
+/*Persons*/
+/*Variant 0: without anything
+  Variant 1: with glasses
+  Variant 2: with item (ice cream etc.)
+*/
+.glasses,
+.item,
+.variant-2 .noitem {
+	display: none;
+}
+
+.variant-1 .glasses,
+.variant-2 .item {
+	display: inline;
+}
+
+/*Hair:
+  0 - none
+  1, 3 - blond
+  2, 4 - dark
+  1, 2 - short
+  3, 4 - long
+*/
+.hair0,
+.hair1,
+.hair2 {
+	fill: none;
+}
+
+.hair-1 .hair0,
+.hair-3 .hair0,
+.hair-3 .hair1,
+.sex-1.hair-1 .hair2,
+.sex-1.hair-3 .hair2 { /*ff8*/
+	fill: #db7;
+	stroke: #db7;
+}
+
+.hair-2 .hair0,
+.hair-4 .hair0,
+.hair-4 .hair1,
+.sex-1.hair-2 .hair2,
+.sex-1.hair-4 .hair2 {
+	fill: #321;
+	stroke: #321;
+}
+
+/*Skin: 0 - light, 1- dark*/
+.skin-0 .skin {
+	fill: #da8;
+	stroke: #754;
+}
+.skin-1 .skin {
+	fill: #a86;
+	stroke: #543;
+}
+
+/*Shirt: none, red, blue, green, yellow*/
+/*Trousers: red, blue, green, yellow*/
+/*Top: color of trousers*/
+.shirt-0 .shirt,
+.top {
+	display: none;
+}
+.sex-1.shirt-0 .top {
+	display: inline;
+}
+.shirt-1 .shirt,
+.trousers-0 .trousers,
+.trousers-0 .top {
+	fill: #f00;
+	stroke: #800;
+}
+.shirt-2 .shirt,
+.trousers-1 .trousers,
+.trousers-1 .top  {
+	fill: #00f;
+	stroke: #008;
+}
+.shirt-3 .shirt,
+.trousers-2 .trousers,
+.trousers-2 .top  {
+	fill: #0f0;
+	stroke: #080;
+}
+.shirt-4 .shirt,
+.trousers-3 .trousers,
+.trousers-3 .top  {
+	fill: #ff0;
+	stroke: #880;
+}
+
+.eye {
+	fill: black;
+}
+.mouth {
+	fill: #800;
+}
+.nail {
+	fill: #da8;
+	stroke: #754;
+}
+.sex-1.variant-0 .nail {
+	fill: #808;
+	stroke: #404;
+}
+.metal {
+	fill: silver;
+}
+.glass { /*glass of sunglasses*/
+	fill: #951;
+	fill-opacity: 0.7;
+	stroke: #951;
+}
+.plastic { /*plastic for swim goggles*/
+	fill: #8af;
+	fill-opacity: 0.5;
+	stroke: blue;
+}
+.fin { /*also used for bucket*/
+	fill: #088;
+	stroke: #044;
+}
+.ice-cream-cone {
+	fill: #f80;
+	stroke: #840;
+}
+.ice-cream {
+	fill: #d62;
+	stroke: #631;
+}
+.book {
+	fill: #fff;
+	stroke: #000;
+}
+
+/*Objects*/
+.variant-0 .ball {
+	fill: #f00;
+}
+
+.variant-1 .ball {
+	fill: #0a0;
+}
+
+.variant-2 .ball {
+	fill: #cc3;
+}
+
+.variant-0 .parasol {
+	fill: #f00;
+	stroke: #800;
+}
+
+.variant-1 .parasol {
+	fill: #0f0;
+	stroke: #080;
+}
+
+.variant-2 .parasol {
+	fill: #00f;
+	stroke: #008;
+}
+
+.variant-0 .towel {
+	fill: #808;
+	stroke: #404;
+}
+
+.variant-1 .towel {
+	fill: #088;
+	stroke: #044;
+}
+
+.variant-2 .towel {
+	fill: #844;
+	stroke: #400;
+}
+
+.type0,
+.type1,
+.type2 {
+	display: none;
+}
+.variant-0 .type0,
+.variant-1 .type1,
+.variant-2 .type2 {
+	display: inline;
+}
+
+.water {
+	fill: #88f;
+	fill-opacity: 0.7;
+}

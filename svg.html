@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<title>SVG</title>
+<link rel="stylesheet" href="svg.css">
+<style>
+svg {
+	border: 1px solid black;
+}
+div {
+	float: left;
+	position: relative;
+}
+div::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+div.sex-0::before {
+	content: "♂";
+}
+div.sex-1::before {
+	content: "♀";
+}
+</style>
+<script src="svg.js"></script>
+</head><body>
+<script>
+var i, sex, hair, shirt, trousers, variant, skin, svg = [SVG_FRONT, SVG_BACK, SVG_SIDE, SVG_SIDE, SVG_LIE_A, SVG_LIE_B, SVG_SWIM];
+for (i = 0; i < svg.length; i++) {
+for (sex = 0; sex < 2; sex++) {
+for (hair = 0; hair < 5; hair++) {
+for (shirt = 0; shirt < 5; shirt++) {
+for (trousers = 0; trousers < 4; trousers++) {
+for (variant = 0; variant < 3; variant++) {
+for (skin = 0; skin < 2; skin++) {
+	if ((sex === 0 && hair > 2) || (sex === 1 && hair === 0) || (i === 6 && shirt !== 0)) continue;
+	document.write('<div class="human sex-' + sex + ' hair-' + hair + ' shirt-' + shirt + ' trousers-' + trousers + ' variant-' + variant + ' skin-' + skin + '">' + svg[i] + '</div>');
+}}}}}}}
+svg = [SVG_TOWEL, SVG_WAVE, SVG_PARASOL, SVG_BALL, SVG_WALLY, SVG_WATER];
+for (i = 0; i < svg.length; i++) {
+for (variant = 0; variant < 3; variant++) {
+	if (i >= 4 && variant !== 0) continue;
+	document.write('<div class="object  variant-' + variant + '">' + svg[i] + '</div>');
+}}
+</script>
+</body></html>

@@ -1,12 +1,10 @@
-This repository will contain my contribution for the [Js13kGames competition 2017](http://2017.js13kgames.com/).
+# I’ve lost my parents!
 
-For now just the idea of my game: A child has lost his parents, and you have to find them. You get a description and then have to find them in a crowd.
+This is my submission for the [Js13kGames competition 2017](http://2017.js13kgames.com/).
 
-The code isn't in a shape to share it yet, but I already have screenshot of the prototype:
-![Screenshot](about/prototype2.png)
+You can play the game: [Development version](https://schnark.github.io/js13kgames-2017/), [minified version](https://schnark.github.io/js13kgames-2017/min/).
 
-The previous prototype looked like this:
-![Screenshot](about/prototype1.png)
+If you are interested in what I though during the devolpment, you can read a bit about it in [about.md](https://github.com/Schnark/js13kgames-2017/blob/master/about/about.md).
 
-And the very first one like this:
-![Screenshot](about/prototype0.png)
+Note that this repository is managed as described in https://xkcd.com/1597/.
+

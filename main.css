@@ -1,0 +1,186 @@
+@keyframes water {
+	from {
+		transform: translateX(10px) translateZ(-3px);
+	}
+	to {
+		transform: translateX(-10px) translateZ(3px);
+	}
+}
+
+body {
+	overflow: hidden;
+	font-family: sans-serif;
+	color: #100;
+	background: #fc8;
+}
+
+h1 {
+	text-align: center;
+}
+
+#text {
+	line-height: 1.7;
+	font-size: 120%;
+	max-width: 50em;
+	margin: auto;
+}
+
+@media (min-width: 1200px) and (min-height: 700px) {
+	#too-small {
+		display: none;
+	}
+}
+
+#start {
+	display: block;
+	font: inherit;
+	width: 80%;
+	border: 2px solid #d84;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 1em auto 0;
+	background: #ea6;
+	cursor: pointer;
+}
+
+#game {
+	display: none;
+}
+
+#skip,
+label,
+#mute,
+#unmute {
+	margin: 0 1em;
+	font: inherit;
+	cursor: pointer;
+	padding: 2px 5px;
+	border: none;
+	background: black;
+	color: white;
+}
+
+label,
+#mute,
+#unmute {
+	float: right;
+}
+
+#three-d:checked ~ label .three-d-off {
+	display: none;
+}
+
+#three-d:not(:checked) ~ label .three-d-on {
+	display: none;
+}
+
+#three-d {
+	display: none;
+}
+
+#skipping {
+	display: none;
+	font-size: 120%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #ea6;
+	text-align: center;
+	line-height: 500px;
+}
+
+#wrapper {
+	margin-left: 250px;
+	perspective: 1000px;
+	perspective-origin: 50% -50%;
+}
+
+#playground {
+	position: relative;
+	width: 800px;
+	height: 650px;
+	background-image: repeating-linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1) 150px, rgba(255, 255, 255, 0.1) 300px),
+		linear-gradient(90deg, #dc5, #a96 480px, #469 520px, #69b); /*water starts at 500px*/
+		/*linear-gradient(90deg, #eb0, #dd8 480px, #88f 520px, #00f)*/
+	pointer-events: none;
+}
+
+#three-d:checked ~ #wrapper #playground {
+	transform-style: preserve-3d;
+	transform: rotateX(90deg);
+}
+
+svg > * {
+	pointer-events: auto;
+}
+
+svg .water {
+	pointer-events: none;
+}
+
+.human,
+.object {
+	position: absolute;
+	transform-origin: bottom;
+}
+
+#three-d:checked ~ #wrapper #playground .human,
+#three-d:checked ~ #wrapper #playground .object{
+	transform-style: preserve-3d;
+	transform: rotateX(-90deg);
+}
+
+.human:not(.question) svg > *,
+.special svg > * {
+	cursor: pointer;
+}
+
+#three-d:checked ~ #wrapper #playground .flat {
+	transform: rotateX(0deg);
+}
+
+.moving svg {
+	animation: 7.5s infinite alternate water;
+}
+
+.human.question {
+	cursor: auto;
+	position: static;
+	transform: none;
+}
+
+#output.wrong #question,
+#output.correct #question,
+#output:not(.wrong) #wrong,
+#output:not(.correct) #correct {
+	display: none;
+}
+
+#output {
+	float: left;
+	width: 100px;
+	border: 1px solid black;
+	border-radius: 1em;
+	padding: 0 15px;
+	background: white;
+}
+
+#output::after {
+	width: 10px;
+	height: 10px;
+	content: "";
+	display: block;
+	background: white;
+	border: 1px black;
+	border-style: none none solid solid;
+	transform: translateY(6px) rotate(-45deg);
+}
+
+#child {
+	clear: left;
+	float: left;
+	width: 100px;
+	margin-top: 20px;
+}

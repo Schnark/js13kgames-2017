@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>I’ve lost my parents!</title>
+<link rel="icon" href="f.ico">
+<link rel="stylesheet" href="svg.css">
+<link rel="stylesheet" href="main.css">
+</head><body>
+<section id="intro"><div id="text">
+<h1>I’ve lost my parents!</h1>
+<ul>
+<li>Help children to find their parents they have lost on a crowded beach!</li>
+<li>Read the description and click on the person that matches it.</li>
+<li>If you really can’t find a lost parent, you can skip it, but don’t do this too often. You’ll automatically skip if you can’t find the missing parent after 3 tries.</li>
+<li>Find as many lost parents as possible in 3 minutes.</li>
+<li>You can get extra points for finding some special items. They are rare, but you’ll probably recognize them when they turn up. Try to find at least 10 of them.</li>
+<li id="too-small">You should make your browser window larger if that’s possible.</li>
+</ul></div>
+<button id="start">Let’s start!</button>
+</section>
+<section id="game">
+<button id="skip">Skip</button>
+Time remaining: <span id="time"></span>
+<button id="mute">♫</button>
+<button id="unmute">♫̸</button>
+<input id="three-d" type="checkbox" checked>
+<label for="three-d"><span class="three-d-on">3D</span><span class="three-d-off">2D</span></label>
+<div id="output">
+<p id="question"></p>
+<p id="wrong"></p>
+<p id="correct"></p>
+</div>
+<div id="child"></div>
+<div id="wrapper"><div id="playground">
+</div></div>
+<div id="skipping">That’s not very nice. A child has lost his parents and you just skip the search for them. Don’t do this too often.</div>
+</section>
+<script src="svg.js"></script>
+<script src="audio.js"></script>
+<script src="main.js"></script>
+</body></html>
